@@ -90,7 +90,7 @@ app.get('/', function (req, res) {
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails, reqIP: req.ip });
     });
   } else {
-    res.render('index.html', { pageCountMessage : null});
+    res.render('index.html', { pageCountMessage : null, reqIP: req.ip });
   }
 });
 
